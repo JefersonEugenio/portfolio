@@ -30,7 +30,7 @@ header .container {
 }
 
 header .logo {
-    background-image: url('Logo-DB.png');
+    background-image: url('/image/Logo-DB.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,13 +43,69 @@ header nav ul {
     gap: 20px;
 }
 
-header nav ul li a {
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu li a {
     color: #333;
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
+.menu li a:hover {
     color: #00bcd4;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ /*Responsividade*/
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Esconde o menu em telas pequenas */
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: auto;
+    }
+
+    .menu.show {
+        display: flex; /* Mostra o menu quando ativado */
+    }
+
+    .hamburger {
+        display: block; /* Exibe o botão hambúrguer */
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #000000;
+    }
 }
 
 .container {
@@ -73,6 +129,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .sobre .imagem {
@@ -82,7 +140,43 @@ section {
     margin-left: 40px;
     border-radius: 15px;
     overflow: hidden;
-    display: block;
+    object-fit: cover;
+}
+
+.sobre .imagem img {
+    width: 100%; /* Imagem ocupa todo o contêiner */
+    height: 100%; /* Mantém proporção com o contêiner */
+    display: block; /* Remove possíveis espaços adicionais */
+}
+
+/* .sobre .imagem {
+    width: 40%; 
+    height: auto;
+} */
+
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre .imagem {
+        width: 80%;
+        height: auto;
+        margin: 0 auto 20px;
+        border-radius: 10px;
+    }
+
+    .sobre .container {
+        width: 80%;
+        height: auto;
+    }
+
+    .sobre .container h1, .sobre .container h2 {
+        text-align: center; /* Centraliza os títulos */
+    }
+
 }
 
 .sobre .container {
