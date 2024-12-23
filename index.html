@@ -5,67 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Jeferson</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/styleMedia.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo"></div>
+            <a href="https://db.tec.br/" target="_blank" class="logo-link" aria-label="Link para o site">
+                <img src="/image/Logo-DB.png" alt="logo DB">
+            </a>
             <nav>
                 <button class="hamburger" aria-label="Menu">
                     ☰
                 </button>
                 <ul class="menu">
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#formação">Formação</a></li>
-                    <li><a href="#formação">Experiência</a></li>
+                    <li><a href="#Curriculo">Curriculo</a></li>
                     <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    
                 </ul>
                 
             </nav>
+            <div>
+                <a href="https://github.com/JefersonEugenio" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jeferson-eugenio/" target="_blank" class="linkedin-link" aria-label="Perfil no LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </header>
     
-    <section id="sobre" class="sobre">
+    <section id="perfil" class="perfil">
+        <div>
+            <p>Olá, meu nome é</p>
+            <h1>JEFERSON LOPES EUGENIO</h1>
+            <p>Sou desenvolvedor Analista de Testes e Qualidade de Software (QA) na DB</p>
+        </div>
+
         <div>
             <img class="imagem" src="/image/perfil.jpg" alt="Imagem de perfil"></img>
         </div>
-        
-        <div class="container">
-            <h1>&lt; JEFERSON LOPES EUGENIO &gt;</h1>
-            <p>Sou desenvolvedor Analista de Testes e Qualidade de Software (QA)</p>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="mim">
             <h2>Sobre mim</h2>
-            <p>Sou surdo desde nasci, sou único familia surdo, meu hobby é futebol, um desenvolvedor apaixonado por tecnologia. Tenho experiência em HTML, CSS, JavaScript e framework como Laravel.</p>
-        </div>
-    </section>
+            <p>Sou surdo desde que nasci e o único surdo na minha família. Essa experiência me tornou uma pessoa resiliente, determinada a superar barreiras de comunicação e alcançar meus objetivos. Meu hobby é o futebol, além de outras atividades esportivas, que sempre me trazem animação e momentos de lazer.</p>
 
-    <section id="projetos" class="projetos">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição breve do projeto.</p>
-                    <a href="#" target="_blank">Visualizar</a>
-                </div>
-                <div class="card">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição breve do projeto.</p>
-                    <a href="#" target="_blank">Visualizar</a>
-                </div>
-            </div>
+            <p>Meu primeiro contato com a programação foi em 2013, durante um curso de Java. Em 2015, explorei a linguagem Python e automação de testes. No entanto, foi em 2018, ao ingressar no curso de Análise e Desenvolvimento de Sistemas (ADS) na faculdade, que comecei a entender mais profundamente a tecnologia e a me apaixonar pela área. Em 2019, iniciei minha trajetória profissional na área de TI, onde adquiri muitos conhecimentos e me desenvolvi como profissional.</p>
+                
+            <p>Passei pelo projeto de conclusão de curso (TCC) e estou programado para me formar na faculdade em março de 2025. Atualmente, trabalho com automação de testes e sigo explorando outras linguagens de programação, sempre buscando novos aprendizados, desafios e apaixonado por tecnologia.</p>
         </div>
-    </section>
-
-    <section id="contato" class="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato comigo por email: <a href="mailto:jeferson.lopes@db.tec.br">jeferson.lopes@db.tec.br</a></p>
+        <div class="habilidades">
+            <h1>HABILIDADES</h1>
+            <ul id="skills-list" class="space-y-4 ml-2"></ul>
         </div>
     </section>
 
     <footer>
-        <div class="logo"></div>
+        <img class="logoDBF" src="/image/logoDBF.png" alt="logo DB">
     </footer>
 
     <script src="/JS/script.js"></script>
