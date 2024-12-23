@@ -108,7 +108,6 @@ section {
     max-height:250px;
     width: 100%;
     height: auto;
-    padding: 10px 0;
     
 }
 
@@ -124,29 +123,9 @@ section {
     justify-content: space-around;
     align-items: flex-start;
     width: 100%;
-    padding: 20px;
 }
 
-.sobre .mim {
-    width: 60%;
-    padding: 0 40px;
-    margin: 0 80px;
-}
 
-.sobre .habilidades {
-    width: 35%;
-    padding: 10px;
-}
-
-.mim {
-    flex: 1;
-    min-width: 300px;
-}
-
-.habilidades {
-    flex: 1;
-    min-width: 300px;
-}
 
 .contato {
     display: flex;
@@ -176,8 +155,10 @@ section {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 0px 160px;
 }
 
 footer .logoDBF{

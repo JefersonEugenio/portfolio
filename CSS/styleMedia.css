@@ -39,6 +39,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 10px 0;
     }
 
     .perfil .imagem {
@@ -47,6 +48,7 @@
         display: block;
         margin: auto;
         border-radius: 20px;
+        padding-top: 10px;
     }
 
 }
@@ -55,11 +57,24 @@
 @media (max-width: 768px) {
     .sobre {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
     }
+
+    .sobre .mim {
+        padding: 10px 10px;
+    }
+
     .habilidades ul {
         margin: 0 auto;
         text-align: left;
+    }
+}
+
+/*footer*/
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
     }
 }
