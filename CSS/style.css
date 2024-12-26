@@ -121,9 +121,23 @@ section {
 .sobre {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     padding: 10px 0;
+}
+
+.sobre .mim {
+    flex: 0 0 45%;
+    padding-right: 20px;
+}
+
+.sobre .mim p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.sobre .habilidades h1 {
+    text-align: center;
 }
 
 .projetos .grid {
