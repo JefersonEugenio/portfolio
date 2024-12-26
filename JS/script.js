@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const navPlaceholder = document.getElementById("header");
+
+    if (navPlaceholder) {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                navPlaceholder.innerHTML = data;
+            })
+            .catch(error => console.error("Erro ao carregar o menu:", error));
+    }
+});
+
 document.querySelector('.hamburger').addEventListener('click', function () {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('show'); // Mostra/esconde o menu
