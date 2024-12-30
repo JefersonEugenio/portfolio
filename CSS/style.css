@@ -140,8 +140,13 @@ section {
     text-align: center;
 }
 
-#projetos {
-    flex: 1;
+.projetos {
+    padding: 10px;
+}
+
+.projetos h2 {
+    padding: 20px;
+    text-align: center;
 }
 
 .projetos .grid {
@@ -166,7 +171,6 @@ section {
 
 footer {
     display: flex;
-    background: #a5e7f5;
     justify-content: center;
     align-items: center;
     text-align: center;
