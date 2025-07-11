@@ -21,6 +21,7 @@ const skills = [
     { name: "PYTHON", filled: 2, total: 5 },
     { name: "JAVASCRIPT", filled: 2, total: 5 },
     { name: "SELENIUM", filled: 4, total: 5 },
+    { name: "CYPRESS", filled: 3, total: 5 },
     { name: "REST ASSURED", filled: 3, total: 5 },
     { name: "JUNIT 5", filled: 4, total: 5 },
     { name: "HTML", filled: 3, total: 5 },
